@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Estante Amarela</title>
+	<link rel="shortcut icon" href="logo.png">
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{
+		background-image: url(fundoteste.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	#bk{
+		background-color: blue;
+		width: 1020px;
+		height: 2020px;
+		margin: auto;
+	}
+	.banner{
+		width: 620px;
+		height: 150px;
+		margin: auto;
+		margin-top: 50px;
+	}	
+
+	.fundomenu {
+    	background-color: #FFEB3B;
+    	color: white;
+    	padding: 16px;
+    	font-size: 16pt;
+    	border: none;
+    	width: 245px;
+    	cursor: pointer;
+	}
+
+
+	.menu {
+    	position: relative;
+    	display: inline-block;
+	}
+
+	.conteudomenu {
+    	display: none;
+    	position: absolute;
+    	background-color: #f9f9f9;
+    	min-width: 250px;
+    	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    	z-index: 1;
+	}
+
+
+	.conteudomenu a {
+    	color: black;
+    	font-family: arial;
+    	padding: 12px 16px;
+    	text-decoration: none;
+    	display: block;
+	}
+
+
+	.conteudomenu a:hover {background-color: #f1f1f1}
+
+	.menu:hover .conteudomenu {
+    	display: block;
+	}
+
+
+	.menu:hover .dropbtn {
+    	background-color: #3e8e41;
+	}
+	.busca{
+		width: 220px;
+		height: 40px;
+    	color: black;
+    	font-family: arial;
+    	font-size: 12pt;
+    	padding: 12px 16px;
+	}
+	</style>
+</head>
+<body>
+	<div id="bk">
+		<table cellspacing="3" align="center">
+			<th>
+				<td colspan="4">
+					<img src="banner.png" class="banner">
+				</td>
+			</th>
+			<tr>	
+				<td align="center">
+					<div class="menu">
+  						<button class="fundomenu">Gêneros</button>
+  							<div class="conteudomenu">
+  								<a href="#">Comédia</a>
+  								<a href="#">Drama</a>
+    							<a href="#">Romance</a>
+  							</div>
+					</div>
+				</td>
+				<td>	
+					<div class="menu">
+  						<button class="fundomenu">Livros</button>
+  							<div class="conteudomenu">
+    							<a href="#">Amorzinho</a>  								
+  								<a href="#">Diário de um Banana</a>
+  								<a href="#">Inferno</a>
+  							</div>
+					</div>
+				</td>
+				<td>
+					<div class="menu">
+  						<button class="fundomenu">Autores</button>
+  							<div class="conteudomenu">
+  								<a href="#">Eça de Queiroz</a>
+  								<a href="#">Machado de Assis</a>
+    							<a href="#">Mauricio de Sousa</a>
+  							</div>
+					</div>
+				</td>
+				<td>	
+					<div class="menu">
+  						<button class="fundomenu">Mais Opções</button>
+  							<div class="conteudomenu">
+  								<input type="search" name="busca" placeholder="Pesquise sua Resenha" class="busca">
+    							<a href="#">Áudio Resenha</a>
+  								<a href="#">Envie sua Resenha</a>    							  								
+  								<a href="#">Peça sua resenha</a>
+  							</div>
+					</div>																	
+				</td>
+			</div>		
+		</table>
+	</div>
+</body>
+</html>

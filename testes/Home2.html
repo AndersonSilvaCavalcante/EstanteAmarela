@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Estante Amarela</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{
+		background-image: url(fundoteste.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	#bk
+		background-color: #FFF59D;
+		width: 1020px;
+		height: 5000px;
+	}
+	ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color:  #FDD835;
+    	margin: auto;
+	}
+
+	li {
+    	float: left;
+	}
+
+	li a, .dropbtn {
+    	display: inline-block;
+    	color: white;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+	}
+
+	li a:hover, .menu:hover .dropbtn {
+    	background-color: red;
+	}
+
+	li.menu {
+    	display: inline-block;
+	}
+
+	.fundomenu {
+    	display: none;
+    	position: absolute;
+    	background-color: white;
+    	min-width: 160px;
+    	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    	z-index: 1;
+	}
+
+	.fundomenu a {
+    	color: black;
+    	padding: 12px 16px;
+    	text-decoration: none;
+    	display: block;
+    	text-align: left;
+	}
+
+	.fundomenu a:hover {background-color: #f1f1f1}
+
+	.menu:hover .fundomenu {
+    	display: block;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="bk">
+		<table align="center" >
+			<th class="banner">
+				<td colspan="3" align="center
+				">
+					<img src="banner.png" width="820" height="220" align="center">
+				</td>
+			</th>
+			<tr align="center">
+					<ul>
+  						<li class="menu">
+    						<a href="javascript:void(0)" class="dropbtn">Autores</a>
+    							<div class="fundomenu">
+							      <a href="#">Link 1</a>
+							      <a href="#">Link 2</a>
+							      <a href="#">Link 3</a>
+    							</div>
+  						<li><a href="#home">Peça sua Resenha</a></li>
+  						<li><a href="#news">Envie su Resenha</a></li>    							
+  						</li>
+					</ul>												
+				</td>	
+		</table>
+	</div>
+</body>
+</html>
