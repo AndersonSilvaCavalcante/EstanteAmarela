@@ -26,7 +26,6 @@
 		background-image: url(imagens/fundoteste.png);
 		background-size: 1600px 800px;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
 	}
 	.be{
 		width: 400px;
@@ -39,7 +38,7 @@
 	}
 	v{
 		color: white;
-		padding-right: 20;
+		padding-right: 65;
 	}
 </style>
 </head>
@@ -48,25 +47,28 @@
 	<form action="home.html" method="get">
 		<table cellspacing="8">
 			<tr>
-				<td align="center"><img src="imagens/entrar.png" class="logo"></td>
+				<td align="center"><img src="imagens/criar.png" class="logo"></td>
 			</tr>
 			<tr>
-				<td><input type="text" placeholder="&nbsp;&nbsp;E-mail" class="b">
+				<td><input type="text" placeholder="&nbsp;&nbsp;Nome" class="b">
 			</tr>
 			<tr>
-				<td><input type="password" maxlength="10" minlength="5" placeholder="&nbsp;&nbsp;Senha (maximo 10 caracteres) " class="b"> 
+				<td><input type="text" placeholder="&nbsp;&nbsp;Sobrenome" class="b">
 			</tr>
 			<tr>
-				<td> <input type="submit" value="Entrar" class="be">
+				<td><input type="Email" placeholder="&nbsp;&nbsp;Email" class="b"> 
 			</tr>
 			<tr>
-				<td> <input type="submit" value="Entar só para ler" class="be">
+				<td> <input type="password" maxlength="10" minlength="5" placeholder ="&nbsp;&nbsp;Senha (maximo 10 caracteres)" class="be">
 			</tr>
 			<tr>
-				<td align="center" align="center"> <v> Ainda não tem uma conta? </v> <a href="cadastro.html" > Clique aqui </a> 
+				<td><input type="password" maxlength="10" minlength="5" placeholder="&nbsp;&nbsp;Confirme sua senha" class="b">
 			</tr>
 			<tr>
-				<td align="center"> <input type="checkbox" value="" name="livros" >&nbsp;&nbsp;<v>Receber novas resenhas </v>
+				<td><input type="submit" value="&nbsp;&nbsp;Criar conta e entrar" class="b">
+			</tr>
+			<tr>
+				<td align="center"> <input type="checkbox"  name="livros" >&nbsp;&nbsp;<v>Receber novas resenhas </v>
 			</tr>
 		</table>
 	</form>
