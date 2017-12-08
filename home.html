@@ -5,19 +5,21 @@
   <meta charset="utf-8">
   <style type="text/css">
     body{
+    	margin: 0;
     background-image: url(imagens/fundoteste.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     }
     #global{
      width: 1050px;
+     margin: auto;
     }
     #barra{
-      width: 1000px;
+      width: 100%;
       height: 50px;
       background-color: #FFEB3B;
       margin: auto;
-      margin-left: 176px;
+      
       font-family: arial;
     }
     #banner{
@@ -25,7 +27,7 @@
     }
     .banner{
       width: 1000px;
-      margin-left: 170px;
+      
     }
     .menu {
       background-color: #FFEB3B;
@@ -45,10 +47,9 @@
       display: none;
       position: absolute;
       background-color: #f9f9f9;
-      min-width: 300px;
-      max-width: 1000px;
-      min-width: 190px;
-      max-height: 200px;      
+      max-width: 10000px;
+      min-width: 856px;
+      max-height: 10000px;      
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
@@ -68,18 +69,52 @@
       background-color: #FFEE58;
     }
     #destq{
-      margin-left: 200px;
+      margin-top: 4%;
+      align-items: center;
+      width: 100%;
     }
     .livdest{
-      width: 150px;
-      height: 200px;
+      width: 50%;
+      height: 10%;
+
     } 
     .tit{
       margin-left: 100px;
     }
     .direitos{
-      margin-top: 25px;
+      line-height: 3;
     }
+    .obra{
+    	font-size: 10pt;
+    	width: 2000px;
+    }
+    .op{
+    	font-family: arial;
+    	color: white;
+    	text-decoration: none;
+    }
+    .menu2 {
+      background-color: #FFEB3B;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      width: 180px;
+      outline: 0;
+    }
+    .fundo:hover .menu2 {
+      background-color: #FFEE58;
+    }      
+      #barra2{
+      width: 100%;
+      height: 50px;
+      background-color: #FFEB3B;
+      margin: auto;
+      margin-top: 5%;
+      color: white;
+      font-family: arial;
+   }   
   </style>
 </head>
 <body>
@@ -91,22 +126,44 @@
               <button class="menu">Autores</button>
                 <div class="lista">
                 <table>
-                  <tr>
-                    <td><a href="#">Anderson Silva</a></td>
-                    <td><a href="#">Amanda Nobre</a></td>
-                    <td><a href="#">Lavínia Lima</a></td> 
-                    <td><a href="#">Anderson Silva</a></td>
-                    <td><a href="#">Amanda Nobre</a></td>
-                    <td><a href="#">Lavínia Lima</a></td>                                                                               
+                 <tr>
+                    <td><a href="#">Abbi Glines </a></td>
+                    <td><a href="#">Amy Harmon </a></td>
+                    <td><a href="#">Becky Albertalelli</a></td> 
+                    <td><a href="#">Benjamin Alire Sáenz</a></td>
+                    <td><a href="#">Bianca Briones </a></td>
+                    <td><a href="#">Carina Rissi </a></td> 
+                    <td><a href="#">Colleen Hoover</a></td>
+                    <td><a href="#">C.S Lewis</a></td>
+                    <td><a href="#">Cynthia Hand</a></td> 
+                    <td><a href="#">David Levithan</a></td>                                                                          
                   </tr>
+
                   <tr>
-                    <td><a href="#">Anderson Silva</a></td>
-                    <td><a href="#">Amanda Nobre</a></td>
-                    <td><a href="#">Lavínia Lima</a></td> 
-                    <td><a href="#">Anderson Silva</a></td>
-                    <td><a href="#">Amanda Nobre</a></td>
-                    <td><a href="#">Lavínia Lima</a></td>                                                                               
-                  </tr>                      
+                    <td><a href="#">Jamie McGuire</a></td>
+                    <td><a href="#">J. A. Redmerski</a></td>
+                    <td><a href="#">Jennifer Brown </a></td> 
+                    <td><a href="#">Jennifer Niven </a></td>
+                    <td><a href="#">Jenny Austen </a></td>
+                    <td><a href="#">John Green</a></td> 
+                    <td><a href="#">Josh Malerman</a></td>
+                    <td><a href="#">Kiera Cass</a></td>
+                    <td><a href="#">Marie Lu</a></td>  
+                    <td><a href="#">Nicola Yoon</a></td>                                                                     
+                  </tr>
+
+                   <tr>
+                    <td><a href="#">Raphael Montes</a></td>
+                    <td><a href="#">R.J Palacio </a></td>
+                    <td><a href="#">Suzanne Collins</a></td> 
+                    <td><a href="#">William March</a></td> 
+                    <td><a href="#">Cassandra Clare</a></td>
+                    <td><a href="#">George R.R Martin</a></td>
+                    <td><a href="#">Sarah J. Maas</a></td> 
+                    <td><a href="#">Enrique Coimbra</a></td>
+                    <td><a href="#">Vitor Martins</a></td>
+                    <td><a href="#">Nana Pauvolih </a></td>                                                                    
+                  </tr>
                 </table>
                 </div>
             </div>
@@ -115,61 +172,50 @@
                 <div class="lista">
                 <table>
                   <tr>
-                    <td><a href="#">Anderson Silva</a></td>
-                    <td><a href="#">Amanda Nobre</a></td>
-                    <td><a href="#">Lavínia Lima</a></td> 
-                    <td><a href="#">Anderson Silva</a></td>
-                    <td><a href="#">Amanda Nobre</a></td>
-                    <td><a href="#">Lavínia Lima</a></td>                                                                               
-                  </tr>
-                  <tr>
-                    <td><a href="#">Anderson Silva</a></td>
-                    <td><a href="#">Amanda Nobre</a></td>
-                    <td><a href="#">Lavínia Lima</a></td> 
-                    <td><a href="#">Anderson Silva</a></td>
-                    <td><a href="#">Amanda Nobre</a></td>
-                    <td><a href="#">Lavínia Lima</a></td>                                                                               
-                  </tr>                      
+                    <td class="obra"><a href="#">Por lugares incríveis </a></td> 
+                    <td class="obra"><a href="#">Orgulho e preconceito </a></td>
+                    <td class="obra"><a href="#"> O leão, A feiticeira e o guarda-roupa.</a></td>
+                    <td class="obra"><a href="#">Tudo e todas as coisas </a></td> 
+                    <td class="obra"><a href="#">Extraordinário</a></td>
+                    <td class="obra"><a href="#">A seleção</a></td>
+                    <td class="obra"><a href="#"></a></td> 
+                    <td class="obra"><a href="#"></a></td>
+                    <td class="obra"><a href="#"></a></td>                                                                       
+                  </tr>                 
                 </table>
                 </div>
+            </div>
+            <div class="fundo">
+              <button class="menu2"><a href="envie.html" class="op">Envie sua Resenha</a></button>                                                   
             </div> 
             <div class="fundo">
-              <button class="menu">Mais Opções</button>
-                <div class="lista">
-                <table>
-                  <tr>
-                    <td><a href="envie.html">Envie sua Resenha</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="peca.html">Peça sua Resenha</a></td>
-                  </tr>                                                         
-                </table>
-                </div>
+              <button class="menu2"><a href="peca.html" class="op">Peça sua Resenha</a></button>                                                   
+             </div>
             </div>                                                      
         </div>
-        </div>
+       </div>
     <div id="destq">
-      <table align="center" cellspacing="30">
+      <table align="center">
         <tr align="center">
           <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho"><img src="imagens/amorzinho.jpg" class="livdest"></a>
+            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
           </td>
           <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho"><img src="imagens/amorzinho.jpg" class="livdest"></a>
-          </td> 
-          <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho"><img src="imagens/amorzinho.jpg" class="livdest"></a>
+            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
           </td>
           <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho"><img src="imagens/amorzinho.jpg" class="livdest"></a>
-          </td> 
+            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
+          </td>
           <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho"><img src="imagens/amorzinho.jpg" class="livdest"></a>
-          </td>                                                                                        
-        </tr>  
+            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
+          </td>
+          <td>
+            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
+          </td>          
+        </tr>                     
       </table>
     </div> 
-    <div id="barra">
+    <div id="barra2">
       <p align="center" class="direitos">
         Todos os direitos reservados a CISCO® Web Development 2017 
       </p>

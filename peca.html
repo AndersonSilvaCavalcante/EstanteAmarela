@@ -1,18 +1,18 @@
-<html>
+<html lang="pt-br">
 <head>
-	<title>estanteamarela</title>
+	<title>Peça uma Resenha</title>
+	<link rel="shortcut icon" href="imagens/logo.png">
 	<meta charset="utf-8">
 	<style type="text/css">
-		#form{
+	.global{
 			margin: auto;
-		    margin-top: 150px; 
+			padding-top: 100;
+	}
+		#fundo{ 
 			background-color:#FFCC00;
-			margin: auto;
 			height: 400px;
-			width: 500px;
-            padding-top: 80px;
-		   padding-right: 80px;
-		   padding-left: 80px;
+			width: 600px;
+
 		 
 		} 
 		#perto{
@@ -27,56 +27,64 @@
         border: none;
         font-family: arial;
         font-size: 15pt;
-     }
-        }
-        .nome{
+        text-decoration: none;
+    }
+      .nome{
             padding-right: 20px;
-        }
+            width: 326px;
+            height: 25px;
+    }
 
     .HG{
-    	resize:none;
+    	resize: none;
     	width: 326px;
         height: 80px;
 
     }
     .peca{
-    	width: 520px;
-        height: 100px;
+    	width: 590px;
+        height: 110px;
+        margin: auto;
 
+    }
+    table{
+    	font-family: arial;
+    	color: white;
+    	font-size: 14pt;
     }
 	</style>
 </head>
 <body>
-	<div id="form">
-		<form action="testa.html" method="get">
+	<div class="global" align="center">
+	<div id="fundo" align="center">
+		<form>
 			<table align="center" margin="100" >
 				   	<tr>
-				   		<img src="imagens/peca.png" class="peca">
+				   		<img src="imagens/peca.png" class="peca" align="center">
 					</tr>
 					<div id="perto">
 				   <tr><td>Nome:</td></tr>
-						<td> <input type="text" name="texto"  size ="42"  class="nome" ></td>
+						<td> <input type="text" name="texto"  size ="42"  class="nome" placeholder="Digite seu Nome"></td>
                 </td></td>
 				 	 	
 				 	 	<tr><td>E-mail:</tr></td>
 				 		 
-				 		 <td><input type="Email" name="texto" size ="42" placeholder="denecir@gmail.com" </td>
+				 		 <td><input type="Email" name="texto" size ="42" placeholder="email@email.com" class="nome"></td>
                          <tr><td>Escreva seu pedido:</tr></td>
-                        <tr><td><textarea row="5" cols="20" name="texto" size="42" 
+                        <tr><td><textarea row="5" cols="50" name="texto" 
                         	placeholder="Nome do livro: 
 
 Autor:"
                         	 class="HG"></textarea></td></tr>
 				
-				 	<tr><td><input type="submit" value="Enviar" name="Enviar"class="butao" ></tr></td>
-				 </div>
-                   
+				 	<tr><td><button class="butao"><a href="psucesso.html" class="butao">Enviar</button></tr></td>
+				 </div>   
 				 </div>
 				 <br><br>
 		<br><br>
-
 			</table>
 		</form>
+	</div>
 	</div>
 </body>
 </html>
