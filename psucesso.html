@@ -1,75 +1,64 @@
-<html>
+<html lang="pt-br">
 <head>
-	<title>estanteamarela/pedidoenviadocomsucesso</title>
+	<title>Parabéns!</title>
+	<link rel="shortcut icon" href="imagens/logo.png">
 	<meta charset="utf-8">
 	<style type="text/css">
-		#form{
-			margin: auto;
-		    margin-top: 150px; 
-			background-color:#FFCC00;
-			margin: auto;
-			height: 400px;
-			width: 500px;
-            padding-top: 80px;
-		   padding-right: 80px;
-		   padding-left: 80px;
-		 
-	
-
+	.global{
+		margin: auto;
+		padding-top: 100;
 		}
+	#fundo{ 
+		background-color:#FFCC00;
+		height: 50%;
+		width: 40%;
+		} 
      .butao{
-        background-color:#B8860B;
+       	background-color:#B8860B;
         color: white;
-        width: 325px;
-        height: 35px;
+        width: 120%;
+        height: 45px;
         border: none;
         font-family: arial;
         font-size: 15pt;
-        outline: 0;
         text-decoration: none;
-        margin-top: 100px;
-
-    }
-    .voltar{
-    	background-color:#B8860B;
-        color: white;
-        width: 325px;
-        height: 35px;
-        border: none;
-        font-family: arial;
-        font-size: 15pt;
-        outline: 0;
-        text-decoration: none;
-        margin-top: 30px;
-
-    }
-
+        }
     .peca{
-    	width: 560px;
-        height: 100px;
+    	width: 93%;
+        height: 30%;
         margin: auto;
-    }
-
+    	}
+    .areabotoes{
+    	margin-top: 4%;
+    	}	
+    table{
+    	font-family: arial;
+    	color: white;
+    	font-size: 14pt;
+    	}
 	</style>
 </head>
 <body>
-	<div id="form">
-		<form>
-			<table align="center">
-				<tr>
-					<img src="imagens/pedido.png" class="peca">
-			    </tr>
-				 	<tr><td><button class="butao"><a href="home.html" class="butao">Voltar para a página inicial</button></tr></td>
-
-				 	<tr><td><button class="voltar"><a href="peca.html" class="butao">Pedir outra resenha</button></tr></td>
-		
-				 </div>
-                   
-				 <br><br>
-		<br><br>
-
+	<center>
+		<div class="global">
+		<div id="fundo">
+			<table>
+				 <tr>
+				   	<img src="imagens/pedido.png" class="peca">
+				</tr>
+			<table cellspacing="19">
+				<div class="areabotoes">
+				 	<tr>
+				 		<td><button class="butao"><a href="home.html" class="butao">Página Inicial</a></button></td>
+				 	</tr>
+				 	<tr>
+				 		<td><button class="butao"><a href="peca.html" class="butao">Faça outro pedido</a></button></td>
+				 	</tr>
+				</div>
 			</table>
-		</form>
-	</div>
+			</table>
+		</div>
+		</div>
+</center> 
 </body>
 </html>

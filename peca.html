@@ -7,84 +7,87 @@
 	.global{
 			margin: auto;
 			padding-top: 100;
-	}
+
+			}
+
 		#fundo{ 
 			background-color:#FFCC00;
-			height: 400px;
-			width: 600px;
+			height: 60%;
+			width: 40%;
+			} 
 
-		 
-		} 
-		#perto{
-			margin-top: -80px;
-
-		}
      .butao{
-        background-color:#B8860B;
-        color: white;
-        width: 325px;
-        height: 35px;
-        border: none;
-        font-family: arial;
-        font-size: 15pt;
-        text-decoration: none;
-    }
+       		background-color:#B8860B;
+        	color: white;
+        	width: 100%;
+        	height: 35px;
+        	border: none;
+        	font-family: arial;
+        	font-size: 15pt;
+        	text-decoration: none;
+        	}
+
       .nome{
-            padding-right: 20px;
-            width: 326px;
+            padding-right: 30%;
+            width: 100%;
             height: 25px;
-    }
+    		}
 
-    .HG{
-    	resize: none;
-    	width: 326px;
-        height: 80px;
+    	.HG{
+    		resize: none;
+    		width: 100%;
+        	height: 80px;
+    		}
 
-    }
-    .peca{
-    	width: 590px;
-        height: 110px;
-        margin: auto;
+    	.peca{
+    		width: 100%;
+        	height: 25%;
+        	margin: auto;
+    		}
 
-    }
-    table{
-    	font-family: arial;
-    	color: white;
-    	font-size: 14pt;
-    }
+    	table{
+    		font-family: arial;
+    		color: white;
+    		font-size: 14pt;
+    		}
+
 	</style>
 </head>
 <body>
-	<div class="global" align="center">
-	<div id="fundo" align="center">
-		<form>
-			<table align="center" margin="100" >
+	<center>
+	<div class="global" >
+		<div id="fundo" >
+			<form>
+				<table >
 				   	<tr>
-				   		<img src="imagens/peca.png" class="peca" align="center">
+				   		<img src="imagens/peca.png" class="peca">
 					</tr>
-					<div id="perto">
-				   <tr><td>Nome:</td></tr>
+				    <tr>
+				   		<td>Nome:</td>
+				    </tr>
+				    <tr>
 						<td> <input type="text" name="texto"  size ="42"  class="nome" placeholder="Digite seu Nome"></td>
-                </td></td>
-				 	 	
-				 	 	<tr><td>E-mail:</tr></td>
-				 		 
+					</tr>
+				 	<tr>
+				 		<td>E-mail:</td>
+					</tr>
+					<tr>				 		 
 				 		 <td><input type="Email" name="texto" size ="42" placeholder="email@email.com" class="nome"></td>
-                         <tr><td>Escreva seu pedido:</tr></td>
-                        <tr><td><textarea row="5" cols="50" name="texto" 
-                        	placeholder="Nome do livro: 
-
-Autor:"
-                        	 class="HG"></textarea></td></tr>
-				
-				 	<tr><td><button class="butao"><a href="psucesso.html" class="butao">Enviar</button></tr></td>
-				 </div>   
-				 </div>
-				 <br><br>
-		<br><br>
-			</table>
-		</form>
+				 	</tr>
+                    <tr>
+                    	<td>Escreva seu pedido:</td>
+                   	</tr>
+                    <tr>
+                    	<td><textarea row="5" cols="50" name="texto" placeholder="Nome do livro: Autor:" class="HG">
+                    	</textarea></td>
+                   	</tr>
+				 	<tr>
+				 		<td><button class="butao"><a href="psucesso.html" class="butao">Enviar</button></a></td>
+				 	</tr>
+				</table>
+			</form>
+		</div>
 	</div>
-	</div>
+</center> 
 </body>
 </html>

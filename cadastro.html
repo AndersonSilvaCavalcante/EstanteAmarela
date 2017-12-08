@@ -1,21 +1,30 @@
-<html>
+<html pt-br>
 <head>
 <title>Estante Amarela</title>
 <link rel="shortcut icon" href="imagens/logo.png">
 <meta charset="utf-8">
 <style type="text/css">
+@media(max-width: 1366px){
 	#l{
-		padding-left: 600;
-		padding-top: 200;
-		font-family: arial;
+		display: none;
 	}
+
+	div#l{
+		display: block;
+		padding-left: 35%;
+		padding-top: 160;
+		font-family: arial;
+
+	}
+
+}
 	.b{
-	width: 400px;
+	width: 96%;
 	border-radius: 400px;
 	height: 25px;
 	}
 	.n{
-		font-size: 40px;
+		font-size: 40pt;
 		text-align: center;
 		color: white;
 	}
@@ -24,17 +33,17 @@
 	}
 	body{
 		background-image: url(imagens/fundoteste.png);
-		background-size: 1600px 800px;
+		background-attachment: fixed;
 		background-repeat: no-repeat;
 	}
 	.be{
-		width: 400px;
+		width: 96%;
 		border-radius: 400px;
 		height: 25px;
 	}
 	.logo{
-		width: 400px;
-		height: 70px;
+		width: 96%;
+		height: 69px;
 	}
 	v{
 		color: white;
@@ -47,7 +56,7 @@
 	<form action="home.html" method="get">
 		<table cellspacing="8">
 			<tr>
-				<td align="center"><img src="imagens/criar.png" class="logo"></td>
+				<td><img src="imagens/criar.png" class="logo"></td>
 			</tr>
 			<tr>
 				<td><input type="text" placeholder="&nbsp;&nbsp;Nome" class="b">
@@ -68,7 +77,7 @@
 				<td><input type="submit" value="&nbsp;&nbsp;Criar conta e entrar" class="b">
 			</tr>
 			<tr>
-				<td align="center"> <input type="checkbox"  name="livros" >&nbsp;&nbsp;<v>Receber novas resenhas </v>
+				<td> <input type="checkbox"  name="livros" >&nbsp;&nbsp;<v>Receber novas resenhas </v>
 			</tr>
 		</table>
 	</form>

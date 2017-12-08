@@ -1,94 +1,94 @@
-<html>
+<html lang="pt-br">
 <head>
 	<title>estanteamarela</title>
+	<link rel="shortcut icon" href="imagens/logo.png">
 	<meta charset="utf-8">
 	<style type="text/css">
-		#form{
+		.global{
 			margin: auto;
-		    margin-top: 150px; 
+			padding-top: 100;
+		    }
+
+		#fundo{
 			background-color:#FFCC00;
-			margin: auto;
-			height: 400px;
-			width: 500px;
-            padding-top: 80px;
-		   padding-right: 80px;
-		   padding-left: 80px;
-		 
-		} 
-		#perto{
-			margin-top: -80px;
+			height: 63%;
+			width: 46%; 
+			} 
 
-		}
-     .butao{
-        background-color:#B8860B;
-        color: white;
-        width: 325px;
-        height: 35px;
-        border: none;
-        font-family: arial;
-        font-size: 15pt;
-        outline: 0;
-        text-decoration: none;
+     	.butao{
+        	background-color:#B8860B;
+        	color: white;
+        	width: 100%;
+        	height: 35px;
+        	border: none;
+        	font-family: arial;
+        	font-size: 15pt;
+        	outline: 0;
+        	text-decoration: none;
+     		}
+        
+        .Nome{
+            width: 100%;
+            height: 25px;
+        	}
 
-     }
-        }
-        .nome{
-            padding-right: 20px;
-        }
+    	.HG{
+    		resize:none;
+    		width: 100%;
+        	height: 80px;
+    		}
 
-    .HG{
-    	resize:none;
-    	width: 326px;
-        height: 80px;
+    	.peca{
+    		width: 92%;
+        	height: 25%;
+        	margin: auto;
+			}
 
-    }
-    .peca{
-    	width: 540px;
-        height: 100px;
-        margin: auto;
+        	table{
+    		font-family: arial;
+    		color: white;
+    		font-size: 14pt;
+   			}
 
-    }
-        table{
-    	font-family: arial;
-    	color: white;
-    	font-size: 14pt;
-    }
 	</style>
 </head>
 <body>
-	<div id="form">
-		<form>
-			<table align="center" margin="100" >
+	<center>
+		<div class="global">
+		<div id="fundo">
+			<form>
+				<table>
 				   	<tr>
 				   		<img src="imagens/envie.png" class="peca">
+					</tr>						
+				   	<tr>
+				   		<td>Nome:</td>
+				   	</tr>
+				   	<tr>
+						<td><input type="text" name="texto"  size ="42"  class="nome" placeholder="Nome" ></td>
 					</tr>
-					<div id="perto">
-				   <tr><td>Nome:</td></tr>
-						<td> <input type="text" name="texto"  size ="42"  class="nome" ></td>
-                </td></td>
-				 	 	
-				 	 	<tr><td>E-mail:</tr></td>
-				 		 
-				 		 <td><input type="Email" name="texto" size ="42" placeholder="denecir@gmail.com" </td>
-                         <tr><td>Escreva sua resenha:</tr></td>
-                        <tr><td><textarea row="5" cols="20" name="texto" size="42" 
-                        	placeholder=" -Título:     
--Autor(a):     
--Editora:" 
-
-
-                        	 class="HG"></textarea></td></tr>
-                        	 <tr><td><input type="file" accept=".doc,.docx,.odt" name="Envie sua resenha" ></td></tr>
-				
-				 	<tr><td><button class="butao"><a href="rsucesso.html" class="butao">Enviar</button></tr></td>
-				 </div>
-                   
-				 </div>
-				 <br><br>
-		<br><br>
-
-			</table>
-		</form>
+				 	<tr>
+				 	 	<td>E-mail:</td>
+				 	</tr>
+					<tr>
+				 		 <td><input type="Email" name="texto" size ="42" placeholder="Exemple@gmail.com" class="Nome"></td>
+				 	</tr>
+                    <tr>
+                         <td>Digite o nome do livro, Autor(a) e Editora:</td>
+                    </tr>
+                    <tr>
+                        <td><textarea row="5" cols="20" name="texto" class="HG"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="file" accept=".doc,.docx,.odt" name="Envie sua resenha" ></td>
+                    </tr>				
+				 	<tr>
+				 		<td><button class="butao"><a href="rsucesso.html" class="butao">Enviar sua resenha </a></button></td>
+				 	</tr>			 		
+				</table>
+			</form>
+		</div>
 	</div>
+	</center>
 </body>
 </html>

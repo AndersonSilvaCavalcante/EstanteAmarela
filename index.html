@@ -1,10 +1,9 @@
-<html>
+<html lang="pt-br">
 <head>
 <title>Estante Amarela</title>
 <link rel="shortcut icon" href="imagens/logo.png">
 <meta charset="utf-8">
 <style type="text/css">
-
 @media(max-width: 1366px){
 	#l{
 		display: none;
@@ -20,68 +19,45 @@
 
 }
 
-	#l{
-		padding-left: 600;
-		padding-top: 200;
-		font-family: arial;
-
-	
-
-	}
 	.b{
-	width: 400px;
+	width: 96%;
 	border-radius: 400px;
 	height: 25px;
-	border: none;
-	outline: none;
-	
 	}
 	.n{
 		font-size: 40px;
 		text-align: center;
 		color: white;
-		
 	}
 	.c{
 		padding-right: 36;
-		
 	}
 	body{
 		background-image: url(imagens/fundoteste.png);
-		background-size: 1600px 800px;
-		background-repeat: no-repeat;
 		background-attachment: fixed;
-		
+		background-repeat: no-repeat;
 	}
 	.be{
-		width: 400px;
+		width: 96%;
 		border-radius: 400px;
 		height: 25px;
-		border: none;
-		outline: none;
-		
+		text-decoration: none;
+		outline: 0;
+		color:black;
 	}
 	.logo{
 		width: 400px;
 		height: 70px;
-		
 	}
 	v{
 		color: white;
 		padding-right: 20;
-
 	}
-
-	
-	form{
-		float:left;
-	}
-
 </style>
 </head>
 <body>
 	<div id="l">
-	<form action="home.html" method="get" class="teste">
+	<form action="home.html" method="get">
 		<table cellspacing="8">
 			<tr>
 				<td align="center"><img src="imagens/entrar.png" class="logo"></td>
@@ -96,13 +72,13 @@
 				<td> <input type="submit" value="Entrar" class="be">
 			</tr>
 			<tr>
-				<td> <input type="submit" value="Entar só para ler" class="be">
+				<td> <button class="be"><a href="home2.html" class="be">Entrar só para ler</a></button>
 			</tr>
 			<tr>
-				<td align="center" align="center"> <v> Ainda não tem uma conta? </v> <a href="cadastro.html" > Clique aqui </a> 
+				<td> <v> Ainda não tem uma conta? </v> <a href="cadastro.html" > Clique aqui </a> 
 			</tr>
 			<tr>
-				<td align="center"> <input type="checkbox" value="" name="livros" >&nbsp;&nbsp;<v>Receber novas resenhas </v>
+				<td> <input type="checkbox" value="" name="livros" >&nbsp;&nbsp;<v>Receber novas resenhas </v>
 			</tr>
 		</table>
 	</form>
