@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <title>Estante Amarela</title>
+  <link rel="shortcut icon" href="imagens/logo.png">
   <meta charset="utf-8">
   <style type="text/css">
     body{
@@ -17,7 +18,7 @@
     #barra{
       width: 100%;
       height: 50px;
-      background-color: #FFEB3B;
+      background-color: #FDD835;
       margin: auto;
       
       font-family: arial;
@@ -30,7 +31,7 @@
       
     }
     .menu {
-      background-color: #FFEB3B;
+      background-color: #FDD835;
       color: white;
       padding: 16px;
       font-size: 16px;
@@ -48,7 +49,7 @@
       position: absolute;
       background-color: #f9f9f9;
       max-width: 10000px;
-      min-width: 856px;
+      min-width: 905px;
       max-height: 10000px;      
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
@@ -64,6 +65,27 @@
     .fundo:hover .lista {
       display: block;
     }
+     .lista2 {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      max-width: 10000px;
+      min-width: 100px;
+      max-height: 10000px;      
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .lista2 a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .lista2 a:hover {background-color: #f1f1f1}
+
+    .fundo:hover .lista2 {
+      display: block;
+    }
 
     .fundo:hover .menu {
       background-color: #FFEE58;
@@ -77,6 +99,12 @@
       width: 50%;
       height: 10%;
 
+    }
+    .rdest{
+    	color: white;
+    	font-weight: bold;
+    	font-family: arial;
+    	font-size: 28pt;
     } 
     .tit{
       margin-left: 100px;
@@ -94,7 +122,7 @@
     	text-decoration: none;
     }
     .menu2 {
-      background-color: #FFEB3B;
+      background-color: #FDD835;
       color: white;
       padding: 16px;
       font-size: 16px;
@@ -109,15 +137,45 @@
       #barra2{
       width: 100%;
       height: 50px;
-      background-color: #FFEB3B;
+      background-color: #FDD835;
       margin: auto;
       margin-top: 5%;
       color: white;
       font-family: arial;
-   }   
+   }
+   .texto{
+      margin: auto;
+   }
+    #capalivro{
+    margin-top: 50px;
+  }
+  .capalivro{
+    margin: auto;
+    width: 300px;
+    height: 400px;
+  }
+  #resenha{
+    width: 900px;
+    margin:auto;
+    max-height: 10000px; 
+  }
+  .resenha{
+    margin-top: 25px;
+    color: white;
+    font-family: arial;
+    font-size: 14pt;
+  }   
+  .grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+       
+}    
   </style>
 </head>
 <body>
+  <center>
   <div id="global">
         <div id="banner">
         <img src="imagens/banner.png" class="banner">
@@ -130,31 +188,29 @@
                     <td><a href="#">Abbi Glines </a></td>
                     <td><a href="#">Amy Harmon </a></td>
                     <td><a href="#">Becky Albertalelli</a></td> 
-                    <td><a href="#">Benjamin Alire Sáenz</a></td>
+                    <td><a href="aristoteles.html">Benjamin Alire Sáenz</a></td>
                     <td><a href="#">Bianca Briones </a></td>
                     <td><a href="#">Carina Rissi </a></td> 
                     <td><a href="#">Colleen Hoover</a></td>
                     <td><a href="#">C.S Lewis</a></td>
-                    <td><a href="#">Cynthia Hand</a></td> 
+                    <td><a href="oultimo.html">Cynthia Hand</a></td> 
                     <td><a href="#">David Levithan</a></td>                                                                          
                   </tr>
-
                   <tr>
                     <td><a href="#">Jamie McGuire</a></td>
                     <td><a href="#">J. A. Redmerski</a></td>
                     <td><a href="#">Jennifer Brown </a></td> 
-                    <td><a href="#">Jennifer Niven </a></td>
+                    <td><a href="porlugares.html">Jennifer Niven </a></td>
                     <td><a href="#">Jenny Austen </a></td>
                     <td><a href="#">John Green</a></td> 
                     <td><a href="#">Josh Malerman</a></td>
-                    <td><a href="#">Kiera Cass</a></td>
+                    <td><a href="selecao.html">Kiera Cass</a></td>
                     <td><a href="#">Marie Lu</a></td>  
-                    <td><a href="#">Nicola Yoon</a></td>                                                                     
+                    <td><a href="tudoetodas.html">Nicola Yoon</a></td>                                                                     
                   </tr>
-
                    <tr>
                     <td><a href="#">Raphael Montes</a></td>
-                    <td><a href="#">R.J Palacio </a></td>
+                    <td><a href="extraordinario.html">R.J Palacio </a></td>
                     <td><a href="#">Suzanne Collins</a></td> 
                     <td><a href="#">William March</a></td> 
                     <td><a href="#">Cassandra Clare</a></td>
@@ -172,54 +228,110 @@
                 <div class="lista">
                 <table>
                   <tr>
-                    <td class="obra"><a href="#">Por lugares incríveis </a></td> 
-                    <td class="obra"><a href="#">Orgulho e preconceito </a></td>
-                    <td class="obra"><a href="#"> O leão, A feiticeira e o guarda-roupa.</a></td>
-                    <td class="obra"><a href="#">Tudo e todas as coisas </a></td> 
-                    <td class="obra"><a href="#">Extraordinário</a></td>
-                    <td class="obra"><a href="#">A seleção</a></td>
-                    <td class="obra"><a href="#"></a></td> 
-                    <td class="obra"><a href="#"></a></td>
-                    <td class="obra"><a href="#"></a></td>                                                                       
-                  </tr>                 
+                    <td class="obra"><a href="porlugares.html">Por lugares incríveis</a></td> 
+                    <td class="obra"><a href="orgulho.html">Orgulho e preconceito</a></td>
+                    <td class="obra"><a href="leao.html"> O leão, A feiticeira e o guarda-roupa</a></td>
+                    <td class="obra"><a href="tudoetodas.html">Tudo e todas as coisas</a></td> 
+                    <td class="obra"><a href="extraordinario.html">Extraordinário</a></td>
+                    <td class="obra"><a href="selecao.html">A seleção</a></td>
+                    <td class="obra"><a href="simon.html">Simon vs A agenda homo sapiens</a></td>                                                                    
+                  </tr>
+                  <tr>
+                    <td class="obra"><a href="oultimo.html">O último</a></td> 
+                    <td class="obra"><a href="#">Quem é você, Alasca?</a></td>
+                    <td class="obra"><a href="#">Cidades de papel</a></td>
+                    <td class="obra"><a href="#">Eleanor e Park</a></td> 
+                    <td class="obra"><a href="#">Entre o agora e o nunca</a></td>
+                    <td class="obra"><a href="#">Os 27 crushes de Molly</a></td>
+                    <td class="obra"><a href="aristoteles.html">Aristóteles e Dante descobrem os segredos do universo</a></td>                                                                    
+                  </tr>
+                  <tr>
+                    <td class="obra"><a href="#">Entre o agora e o sempre</a></td> 
+                    <td class="obra"><a href="#">A escolha perfeita do coração</a></td>
+                    <td class="obra"><a href="#">Procura-se um marido</a></td>
+                    <td class="obra"><a href="#">Desastre iminente</a></td> 
+                    <td class="obra"><a href="#">Beleza perdida</a></td>
+                    <td class="obra"><a href="selecao.html">A seleção</a></td>
+                    <td class="obra"><a href="#">Série Rosemery Beach</a></td>                 
+                  </tr>                                                         
                 </table>
                 </div>
             </div>
             <div class="fundo">
+              <button class="menu">Mais opções</button>
+                <div class="lista2">
+                <table>
+                  <tr>
+                    <td ><a href="contato.html">Contato</a></td>
+                  </tr>
+                  <tr>   
+                    <td><a href="q.html">Quem somos?</a></td>                                                                   
+                  </tr>                                                         
+                </table>
+             </div>
+            <div class="fundo">
               <button class="menu2"><a href="envie.html" class="op">Envie sua Resenha</a></button>                                                   
             </div> 
             <div class="fundo">
-              <button class="menu2"><a href="peca.html" class="op">Peça sua Resenha</a></button>                                                   
-             </div>
-            </div>                                                      
+              <button class="menu2"><a href="peca.html" class="op">Peça sua Resenha</a></button>
+            </div>                                                     
         </div>
        </div>
     <div id="destq">
-      <table align="center">
+      <table align="center" cellspacing="6">
+      	<tr>
+      		<td class="rdest">
+      			<d>#ResenhasemDestaque</d>
+      		</td>
+      	</tr>
         <tr align="center">
           <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
-          </td>
-          <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
-          </td>
-          <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
-          </td>
-          <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
-          </td>
-          <td>
-            <a href="amorzinho.html" targeet="_self"  title="Amorzinho" class=""><img src="imagens/amorzinho.jpg" class="livdest"></a>
-          </td>          
-        </tr>                     
+            <a href="tudoetodas.html" targeet="_self"  title="Tudo e Todas as Coisas" class=""><img src="imagens/tudoetodas.png" class="grow" width="200px"
+         ></a>&nbsp;
+            <a href="extraordinario.html" targeet="_self"  title="Extraordinário" class=""><img src="imagens/extraordinario.png" class="grow" width="200px"></a>&nbsp;
+            <a href="oultimo.html" targeet="_self"  title="O Último Adeus" class=""><img src="imagens/oultimo.png" class="grow" width="200px"></a>&nbsp;
+            <a href="orgulho.html" targeet="_self"  title="Orgulho e Preconceito" class=""><img src="imagens/orgulho.png" class="grow" width="200px"></a>&nbsp;
+            <a href="leao.html" targeet="_self"  title="O leã, a feiticeira e o guarda-roupa" class=""><img src="imagens/leao.png" class="grow" width="200px"></a>&nbsp;
       </table>
-    </div> 
+    </div>
+    <div class="rdest" align="left">
+      Melhor resenha de acordo com os leitores
+    </div>
+      <div class="texto"> 
+      <div id="capalivro">
+      <img src="imagens/aristoteles.png" class="capalivro" align="center">
+    </div>
+    <div id="resenha">
+      <p align="justify" class="resenha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        "Fiquei pensando que poemas são como pessoas. Algumas pessoas você entende de primeira. Outras você simplesmente não entende… e nunca entenderá."  
+
+      </p>
+      <p align="justify" class="resenha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       Dante sabe nadar. Ari não. Dante é articulado e confiante. Ari tem dificuldade com as palavras e duvida de si mesmo. Dante é apaixonado por poesia e arte. Ari se perde em pensamentos sobre seu irmão mais velho, que está na prisão. Um garoto como Dante, com um jeito tão único de ver o mundo, deveria ser a última pessoa capaz de romper as barreiras que Ari construiu em volta de si. Mas quando os dois se conhecem, logo surge uma forte ligação. Eles compartilham livros, pensamentos, sonhos, risadas - e começam a redefinir seus próprios mundos. Assim, descobrem que o amor e a amizade talvez sejam a chave para desvendar os segredos do Universo.
+      </p>
+      <p align="justify" class="resenha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       Aristóteles- Ou Ari como gosta de ser chamado- é um garoto de 15 anos solitário e sem introspectivo. Sua família mantém segredos sobre a vida de Ari, e ele se revolta muito por isso. Ele odeia esses mistérios ao seu redor, pois ainda existe os mistério de dentro de si.
+
+
+      </p>
+      <p align="justify" class="resenha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Ari acha que ter 15 anos é a pior tragédia que pode existir- é mesmo- na vida de alguém. Ele não sabe que ele mesmo é, tem inseguranças com o próprio corpo, não tem muitos amigos e não sabe nadar. Algo que logo vai ser resolvido quando ele conhece Dante em um clube de natação. Dante é tudo que Ari não é, e juntos eles vão descobrir que uma amizade pode fazer você descobrir todos os segredos do universo, e o mais difícil, descobrir quem realmente somos.
+      </p> 
+           <p align="justify" class="resenha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       Esse livro é o amor da minha vida. Toda vez que lembro de Aristotéles e Dante, meu coração dá pulinhos de alegria. A história é sobre amizade e amor, sobre descobertas e segredos. Tudo que um livro bom é. Me identifiquei muito com o Ari, pois li esse livro quando eu tinha 15 anos, e tudo que Ari passava, eu também estava passando. A escrita é linda e os personagens são incríveis. É simplesmente um dos meus livros favoritos.
+
+
+      </p>
+      <p align="justify" class="resenha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        “Aposto que ás vezes é possível desvendar todos os mistérios do universo na mão de uma pessoa”
+      </p>             
+    </div>     
     <div id="barra2">
       <p align="center" class="direitos">
         Todos os direitos reservados a CISCO® Web Development 2017 
       </p>
     </div>    
   </div>
+</center>  
 </body>
 </html>

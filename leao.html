@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title> O leão, a feiticeira e o guarda - roupa </title>
+  <link rel="shortcut icon" href="imagens/logo.png">
+  <meta charset="utf-8">
+  <style type="text/css">
+    body{
+    	margin: 0;
+    background-image: url(imagens/fundoteste.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    #global{
+     width: 1050px;
+     margin: auto;
+    }
+    #barra{
+      width: 100%;
+      height: 50px;
+      background-color: #FDD835;
+      margin: auto;
+      
+      font-family: arial;
+    }
+    #banner{
+      margin-top: 100px;
+    }
+    .banner{
+      width: 1000px;
+      
+    }
+    .menu {
+      background-color: #FDD835;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      width: 140px;
+      outline: 0;
+    }
+    .fundo {
+      position: relative;
+      display: inline-block;
+    }
+    .lista {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      max-width: 10000px;
+      min-width: 905px;
+      max-height: 10000px;      
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .lista a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .lista a:hover {background-color: #f1f1f1}
+
+    .fundo:hover .lista {
+      display: block;
+    }
+     .lista2 {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      max-width: 10000px;
+      min-width: 100px;
+      max-height: 10000px;      
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .lista2 a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .lista2 a:hover {background-color: #f1f1f1}
+
+    .fundo:hover .lista2 {
+      display: block;
+    }
+
+    .fundo:hover .menu {
+      background-color: #FFEE58;
+    }
+    #destq{
+      margin-top: 4%;
+      align-items: center;
+      width: 100%;
+    }
+    .livdest{
+      width: 50%;
+      height: 10%;
+
+    } 
+    .tit{
+      margin-left: 100px;
+    }
+    .direitos{
+      line-height: 3;
+    }
+    .obra{
+    	font-size: 10pt;
+    	width: 2000px;
+    }
+    .op{
+    	font-family: arial;
+    	color: white;
+    	text-decoration: none;
+    }
+    .menu2 {
+      background-color: #FDD835;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      width: 180px;
+      outline: 0;
+    }
+    .fundo:hover .menu2 {
+      background-color: #FFEE58;
+    }      
+      #barra2{
+      width: 100%;
+      height: 50px;
+      background-color: #FDD835;
+      margin: auto;
+      margin-top: 5%;
+      color: white;
+      font-family: arial;
+   }
+   .texto{
+      margin: auto;
+   }
+    #capalivro{
+    margin-top: 50px;
+  }
+  .capalivro{
+    margin: auto;
+    width: 300px;
+    height: 400px;
+  }
+  #resenha{
+    width: 900px;
+    margin:auto;
+    max-height: 10000px; 
+  }
+  .resenha{
+    margin-top: 25px;
+    color: white;
+    font-family: arial;
+    font-size: 14pt;
+  }
+.hoverzoom {
+  position: relative;
+    width: 350px;
+    overflow: hidden;
+    margin-top: 5%
+}
+.hoverzoom > img {
+   width: 100%; 
+  border-radius: 2px;
+  -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+      
+}
+.hoverzoom:hover > img {
+  -webkit-transform: scale(1.5);
+
+}
+.hoverzoom .retina{
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;    
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+    border-radius: 2px;
+    text-align: center;
+    
+ 
+    -webkit-transition:  all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+      -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+       -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+        -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+           transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+    opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+    
+}
+.hoverzoom .retina p {
+  color: #fff;
+}
+.hoverzoom .retina a {
+  display: block;
+  width: 150px;
+  background: #6fc5e9;
+  border: 1px solid #59afd4;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  
+}      
+  </style>
+</head>
+<body>
+  <center>
+  <div id="global">
+        <div id="banner">
+        <img src="imagens/banner.png" class="banner">
+          <div id="barra">
+            <div class="fundo">
+              <button class="menu">Autores</button>
+                <div class="lista">
+                <table>
+                 <tr>
+                    <td><a href="#">Abbi Glines </a></td>
+                    <td><a href="#">Amy Harmon </a></td>
+                    <td><a href="#">Becky Albertalelli</a></td> 
+                    <td><a href="aristoteles.html">Benjamin Alire Sáenz</a></td>
+                    <td><a href="#">Bianca Briones </a></td>
+                    <td><a href="#">Carina Rissi </a></td> 
+                    <td><a href="#">Colleen Hoover</a></td>
+                    <td><a href="#">C.S Lewis</a></td>
+                    <td><a href="oultimo.html">Cynthia Hand</a></td> 
+                    <td><a href="#">David Levithan</a></td>                                                                          
+                  </tr>
+                  <tr>
+                    <td><a href="#">Jamie McGuire</a></td>
+                    <td><a href="#">J. A. Redmerski</a></td>
+                    <td><a href="#">Jennifer Brown </a></td> 
+                    <td><a href="porlugares.html">Jennifer Niven </a></td>
+                    <td><a href="#">Jenny Austen </a></td>
+                    <td><a href="#">John Green</a></td> 
+                    <td><a href="#">Josh Malerman</a></td>
+                    <td><a href="selecao.html">Kiera Cass</a></td>
+                    <td><a href="#">Marie Lu</a></td>  
+                    <td><a href="tudoetodas.html">Nicola Yoon</a></td>                                                                     
+                  </tr>
+                   <tr>
+                    <td><a href="#">Raphael Montes</a></td>
+                    <td><a href="extraordinario.html">R.J Palacio </a></td>
+                    <td><a href="#">Suzanne Collins</a></td> 
+                    <td><a href="#">William March</a></td> 
+                    <td><a href="#">Cassandra Clare</a></td>
+                    <td><a href="#">George R.R Martin</a></td>
+                    <td><a href="#">Sarah J. Maas</a></td> 
+                    <td><a href="#">Enrique Coimbra</a></td>
+                    <td><a href="#">Vitor Martins</a></td>
+                    <td><a href="#">Nana Pauvolih </a></td>                                                                    
+                  </tr>
+                </table>
+                </div>
+            </div>
+            <div class="fundo">
+              <button class="menu">Obras</button>
+                <div class="lista">
+                <table>
+                  <tr>
+                    <td class="obra"><a href="porlugares.html">Por lugares incríveis</a></td> 
+                    <td class="obra"><a href="orgulho.html">Orgulho e preconceito</a></td>
+                    <td class="obra"><a href="leao.html"> O leão, A feiticeira e o guarda-roupa</a></td>
+                    <td class="obra"><a href="tudoetodas.html">Tudo e todas as coisas</a></td> 
+                    <td class="obra"><a href="extraordinario.html">Extraordinário</a></td>
+                    <td class="obra"><a href="selecao.html">A seleção</a></td>
+                    <td class="obra"><a href="simon.html">Simon vs A agenda homo sapiens</a></td>                                                                    
+                  </tr>
+                  <tr>
+                    <td class="obra"><a href="oultimo.html">O último</a></td> 
+                    <td class="obra"><a href="#">Quem é você, Alasca?</a></td>
+                    <td class="obra"><a href="#">Cidades de papel</a></td>
+                    <td class="obra"><a href="#">Eleanor e Park</a></td> 
+                    <td class="obra"><a href="#">Entre o agora e o nunca</a></td>
+                    <td class="obra"><a href="#">Os 27 crushes de Molly</a></td>
+                    <td class="obra"><a href="aristoteles.html">Aristóteles e Dante descobrem os segredos do universo</a></td>                                                                    
+                  </tr>
+                  <tr>
+                    <td class="obra"><a href="#">Entre o agora e o sempre</a></td> 
+                    <td class="obra"><a href="#">A escolha perfeita do coração</a></td>
+                    <td class="obra"><a href="#">Procura-se um marido</a></td>
+                    <td class="obra"><a href="#">Desastre iminente</a></td> 
+                    <td class="obra"><a href="#">Beleza perdida</a></td>
+                    <td class="obra"><a href="selecao.html">A seleção</a></td>
+                    <td class="obra"><a href="#">Série Rosemery Beach</a></td>                 
+                  </tr>                                                         
+                </table>
+                </div>
+            </div>
+            <div class="fundo">
+              <button class="menu">Mais opções</button>
+                <div class="lista2">
+                <table>
+                  <tr>
+                    <td ><a href="contato.html">Contato</a></td>
+                  </tr>
+                  <tr>   
+                    <td><a href="q.html">Quem somos?</a></td>                                                                   
+                  </tr>                                                         
+                </table>
+             </div>
+            <div class="fundo">
+              <button class="menu2"><a href="envie.html" class="op">Envie sua Resenha</a></button>                                               
+            </div> 
+            <div class="fundo">
+              <button class="menu2"><a href="peca.html" class="op">Peça sua Resenha</a></button>                                                 
+            </div>                                                     
+        </div>
+       </div>
+      <div class="hoverzoom">     
+        <img src="imagens/leao.png">
+      <div class="retina">
+        <table align="center">
+          <tr>
+            <td>
+              <p>Autor: C. S Lewis</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Título: O Leão, a Feiticeira e o Guarda-Roupa</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>Ano de publicação: 1950</p>
+            </td>
+          </tr>                              
+        </table>
+      </div>
+      </div>        
+      <div class="texto"> 
+    <div id="resenha">
+      <p align="justify" class="resenha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  "O leão, a feiticeira e o guarda - roupa" narra a história de quatro irmãos: Pedro,Suzana,Edmundo e Lúcia, que por conta dos bombardeios da segunda guerra mundial são mandados para morar em uma casa de campo. Nesta casa , Lúcia encontra um guarda - roupa que a leva para uma terra desconhecida e mágica,  onde ela conhece fauno chamado Tumnus que a conta sobre Nárnia, Aslam e sobre o reinado da feiticeira branca.
+      </p>
+      <p align="justify" class="resenha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Inicialmente os irmãos de Lúcia não acreditam em sua palavra, mas quando eles também entram no guarda - roupa, acabam se envolvendo nas aventuras da misteriosa terra.
+      </p>  
+       <p align="justify" class="resenha">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Esse livro é narrado em terceiro pessoa, fazendo com que o leitor possa ter uma visão mais ampla dos acontecimentos. O livro é bastante inocente, por se tratar de uma literatura infanto juvenil e vem acompanhado de ilustrações de cenas e mapas de Nárnia que facilitam o entendimento da leitura.
+      </p>             
+    </div>
+  </div>
+    <div id="barra2">
+      <p align="center" class="direitos">
+        Todos os direitos reservados a CISCO® Web Development 2017 
+      </p>
+    </div>    
+  </div>
+</center>
+</body>
+</html>

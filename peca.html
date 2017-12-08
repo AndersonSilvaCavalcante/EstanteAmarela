@@ -4,6 +4,11 @@
 	<link rel="shortcut icon" href="imagens/logo.png">
 	<meta charset="utf-8">
 	<style type="text/css">
+	body{
+		background-image: url(imagens/fundoteste.png);
+		background-attachment: fixed;
+		background-repeat: no-repeat;		
+	}
 	.global{
 			margin: auto;
 			padding-top: 100;
@@ -11,13 +16,12 @@
 			}
 
 		#fundo{ 
-			background-color:#FFCC00;
 			height: 60%;
 			width: 40%;
 			} 
 
      .butao{
-       		background-color:#B8860B;
+       		background-color:#FDD835;
         	color: white;
         	width: 100%;
         	height: 35px;
@@ -25,18 +29,25 @@
         	font-family: arial;
         	font-size: 15pt;
         	text-decoration: none;
+        	outline: 0;
+        	border-radius: 50px;
         	}
 
       .nome{
             padding-right: 30%;
             width: 100%;
             height: 25px;
+            outline: 0;
+            border-radius: 50px;
+            border:none;
     		}
 
     	.HG{
     		resize: none;
     		width: 100%;
         	height: 80px;
+        	outline: 0;
+        	border-radius: 10px;
     		}
 
     	.peca{
@@ -66,19 +77,19 @@
 				   		<td>Nome:</td>
 				    </tr>
 				    <tr>
-						<td> <input type="text" name="texto"  size ="42"  class="nome" placeholder="Digite seu Nome"></td>
+						<td> <input type="text" name="texto"  size ="42"  class="nome" placeholder="&nbsp;&nbsp;Digite seu Nome"></td>
 					</tr>
 				 	<tr>
 				 		<td>E-mail:</td>
 					</tr>
 					<tr>				 		 
-				 		 <td><input type="Email" name="texto" size ="42" placeholder="email@email.com" class="nome"></td>
+				 		 <td><input type="Email" name="texto" placeholder="&nbsp;&nbsp;email@email.com" class="nome"></td>
 				 	</tr>
                     <tr>
                     	<td>Escreva seu pedido:</td>
                    	</tr>
                     <tr>
-                    	<td><textarea row="5" cols="50" name="texto" placeholder="Nome do livro: Autor:" class="HG">
+                    	<td><textarea  name="texto" placeholder="Nome do livro: Autor:" class="HG">
                     	</textarea></td>
                    	</tr>
 				 	<tr>
