@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Contato</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#Login{
+			margin: auto;
+			width: 1280px;
+			height: 420px;
+			box-shadow: 0 0 0 0;
+   			border: 0 none;
+   			outline: 0;
+		}
+    	.banner{
+      		width: 800px;
+      
+    	}
+		.textarea{
+			resize: none;
+			border: none;
+			border-radius: 20px;
+			width: 670px;
+			height: 140px;
+			box-shadow: 0 0 0 0;
+   			border: 0 none;
+   			outline: 0;
+   			font-size: 16pt;
+		}
+		.caixa{
+			border: none;
+			border-radius: 20px;
+			height: 40px;
+			width: 580px;
+			box-shadow: 0 0 0 0;
+   			border: 0 none;
+   			outline: 0;
+   			font-size: 16pt;
+		}
+		.enviar{
+			border:none;
+			background-color: #FDD835;
+			width: 250px;
+			height: 40px;
+			border-radius: 50px;
+			box-shadow: 0 0 0 0;
+   			border: 0 none;
+   			outline: 0;
+   			text-decoration: none;
+   			color: white;
+   			font-size: 16pt;
+   			font-family: arial;
+		}
+		.contato{
+			font-size: 60pt;
+			color: white;
+		}
+		body{
+			font-size: 11pt;
+			color: white;
+			background-image: url(imagens/fundoteste.png);
+			font-family: Product Sans;
+		}
+	</style>
+</head>
+<body class="body">
+	<div id="Login">
+			<table align="left">
+				<tr class="contato">
+					<th colspan="2">
+						<div id="banner">
+							<img src="imagens/banner.png" class="banner">
+						</div>
+						Contato		
+					</th>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="Nome" class="caixa" placeholder="&nbsp;&nbsp;&nbsp;Nome Completo*">
+					<td rowspan="3">
+						<textarea cols="30" rows="5" class="textarea" placeholder="&nbsp;Mensagem*"></textarea>
+					</td>
+					</td>	
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="Email" placeholder="&nbsp;&nbsp;&nbsp;Email*" class="caixa">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" name="Telefone" class="caixa" placeholder="&nbsp;&nbsp;&nbsp;Telefone (Opcional)">
+					</td>
+				</tr>
+				<tr>
+					<td align="left">
+						<input type="checkbox" name="Check" value="Deseja receber novidades via SMS e Email?" checked=""> Deseja receber novidades via SMS e Email?
+					</td>
+				</tr>
+				<tr>		
+					<td align="center" colspan="2">
+						<button class="enviar"><a href="home.html" targeet="_self" class="enviar">Enviar e ir para Home</a></button>
+					</td>
+				</tr>	
+		</table>
+	</div>
+</body>
+</html>
